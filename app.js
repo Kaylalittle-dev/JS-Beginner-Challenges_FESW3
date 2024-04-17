@@ -112,4 +112,59 @@ console.log(isNotZero(null))
 
 // Question 10 Calculate Remainder 
 
-function 
+function calcRemainder(num1, num2) {
+    return num1 % num2
+}
+
+console.log(calcRemainder(4,2))
+console.log(calcRemainder(7,8))
+console.log(calcRemainder(9,8))
+
+// Questions 11 Is the Number Odd?
+
+function isOdd(num) {
+    return num % 2 !== 0
+}
+
+console.log(isOdd(1))
+console.log(isOdd(2))
+console.log(isOdd(3))
+
+// Question 12 If Number Is Event, Return 1, Otherwise Return -1
+
+function booleanInteger(num) {
+    if (num % 2 === 0) {
+        return 1
+    }
+    return -1
+}
+
+/*function booleanInteger(num) {
+    return num % 2 === 0 ? 1 : -1
+}  ***Ternary Solution****
+*/
+
+console.log(booleanInteger(1))
+console.log(booleanInteger(2))
+console.log(booleanInteger(5))
+
+/*
+MOST COMMON FALSY STATEMENTS TO MEMORIZE
+* false
+* null
+* undefined
+* " " <-- empty string
+* 0 <-- zero
+*/
+
+
+
+// Question 13 Check is User is logged in AND subscribed
+
+function isLoggedInAndSubscribed (loggedIn, subscribed) {
+    return (loggedIn === 'LOGGED_IN') && (subscribed === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', "SUBSCRIBED"))
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', "SUBSCRIBED"))
+console.log(isLoggedInAndSubscribed('LOGGED_IN', "UNSUBSCRIBED"))
